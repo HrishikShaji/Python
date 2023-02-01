@@ -11,19 +11,22 @@ else:
 def guesser(user_range):
     random_number = random.randint(1, user_range)
     guess = 0
+    guesses = 0
     while random_number != guess:
         guess = input("guess number")
         if guess.isdigit():
             guess = int(guess)
             if guess > random_number:
                 print("too high.try again")
+                guesses += 1
             elif guess < random_number:
                 print("too low,try again")
+                guesses += 1
         else:
             print("enter valid number")
             continue
 
-    print("you won")
+    print(f"you won,you had {guesses}")
 
 
 guesser(user_range)
