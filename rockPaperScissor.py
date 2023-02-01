@@ -3,6 +3,7 @@ import random
 options = ["rock","paper","scissors"]
 computer_wins = 0
 user_wins = 0
+print("\n welcome to Rock Paper Scissors \n \n")
 
 while True:
     user_input = input("pick Rock/Paper/Scissors or Q to quit").lower()
