@@ -15,4 +15,5 @@ def generate_qrcode(text):
     with open("qrimg.png", "wb") as f:
         img.save(f)
 
-generate_qrcode("https://github.com")
+url = input("enter url:")
+generate_qrcode(url)
